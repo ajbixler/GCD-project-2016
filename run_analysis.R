@@ -49,4 +49,10 @@ test<-rep("test", nrow(Xtest))
 train<-rep("train",nrow(Xtrain))
 Xcombinedsub<-mutate(Xcombinedsub, set=c(test,train))
 
+#add a column for activity
+#add a column for participant
+#average all rows for a given participant and activity
+#convert activity code to human readable
+
+#write data to table
 write.table(Xcombinedsub, "./data/ABtidyOutput1.txt", row.names = FALSE)
